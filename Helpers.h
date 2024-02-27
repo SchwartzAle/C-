@@ -8,3 +8,4 @@ int SumCube2(int c, int d)
 {
 	return ((c + d) * (c + d));
 }
+
