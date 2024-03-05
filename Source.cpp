@@ -35,8 +35,9 @@ int main()
     setlocale(LC_ALL, "Russian");
 	int s = 0;
 	//просто ряд чётных цифр
-	for (int i = 2; i < N; cout << i << ' ', s += i, i += 2);
-
+	for (int i = 0; i < N; i += 2)
+		std::cout << i << "\n";
+		
 	//даёт выбор между чётными или нечётными
 	int O;
 	std::cout << "\n" << "2 - чётные, 1 - нечётные: ";
@@ -45,12 +46,18 @@ int main()
 	//если выбор за нечётными
 	if (O == 1)
 	{
-		for (int i = 1; i < N; cout << i << ' ', s += i, i += 2);
+		for (int i = 1; i <= N; i += 2)
+		{
+			std::cout << i << ' ';
+		}
 	}
 	//если выбор за чётными
 	if (O == 2)
 	{
-		for (int i = 2; i < N; cout << i << ' ', s += i, i += 2);
+		for (int i = 2; i <= N; i += 2)
+		{
+			cout << i << ' ';
+		}
 	}
 	//если сделали не правильный выбор
 	if (O>2)

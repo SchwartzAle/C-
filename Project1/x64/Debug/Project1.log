@@ -1,2 +1,4 @@
 ﻿  Source.cpp
+D:\Project1\Source.cpp(49,20): warning C4804: <=: небезопасное использование типа "bool" в операции
+D:\Project1\Source.cpp(49,28): warning C4804: +=: небезопасное использование типа "bool" в операции
   Project1.vcxproj -> D:\Project1\x64\Debug\Project1.exe
